@@ -45,8 +45,8 @@ public class ServletDashboard extends HttpServlet {
 		long idcarrello = (long) request.getSession().getAttribute("cartid");
 		CartDao.addToCart(list, idcarrello );
 		List <Product> listacarrello = CartDao.getWhatInsideCart(idcarrello);
+		request.setAttribute("listadelcarrello", listacarrello);
 		request.setAttribute("lista", ProductDao.getAllProducts());
-        request.setAttribute("listadelcarrello", listacarrello);	
         request.setAttribute("totale", CartDao.getCartTotal(idcarrello));
         RequestDispatcher dispatcher = request.getRequestDispatcher("/homepage.jsp");
 		dispatcher.forward(request, response);

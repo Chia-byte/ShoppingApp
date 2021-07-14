@@ -52,7 +52,7 @@
 		<div style="colour: grey; font-family: Arial;"custom-controlcustom-checkbox">
 			<%
 				List<Product> k = (List <Product>) request.getAttribute("listadelcarrello");
-				if (k.isEmpty()){
+				if (k==null){
 			%>
 			<p>Your cart is empty!</p>
 			<%

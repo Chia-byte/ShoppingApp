@@ -9,7 +9,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "product")
 public class Product {
@@ -60,6 +59,10 @@ public class Product {
 		return price;
 	}
 
+	public int getQuantity() {
+		return quantity;
+
+	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
@@ -87,4 +90,7 @@ public class Product {
 	public void setType(ProductType type) {
 		this.type = type;
 	}
+    public double getSpesaTotale() {
+    	return price*quantity;
+    }
 }

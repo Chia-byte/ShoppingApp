@@ -19,7 +19,8 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="submit" value="enter"></td>
+					<td><input type="submit" value="SHOP"></td>
+					<td><a href="calculator.jsp">Manage Warehouse</a></td>
 				</tr>
 			</table>
 		</form>
