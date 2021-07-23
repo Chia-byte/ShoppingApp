@@ -42,4 +42,9 @@ public class ProductDao {
 		em.getTransaction().commit();
 		return listaProdotti;
 	}
+	public static void addProduct(Product p) {
+		em.getTransaction().begin();
+		em.persist(p);
+		em.getTransaction().commit();
+	}
 }

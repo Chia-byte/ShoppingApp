@@ -12,6 +12,18 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>org.wildfly</groupId>
+			<artifactId>wildfly-naming-client</artifactId>
+			<version>1.0.9.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.4.7.Final</version>
